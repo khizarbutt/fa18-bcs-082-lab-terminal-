@@ -28,14 +28,8 @@ router.get("/register", authentication.checkNotAuthenticated, (req, res) => {
   res.render("register");
 });
 
-//Customer Routes
-// router.post("/orders", orderController().order);
-// router.get("/order", orderController().index);
-
-// // router.get("*", (req, res) => {
-// //   res.render("404", {
-// //     errorcomment: "Opps, Page Not Found",
-// //   });
-// // });
+router.get("/match", (req, res) => {
+  res.render("match");
+});
 
 module.exports = router;
